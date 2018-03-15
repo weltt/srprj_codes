@@ -5564,7 +5564,7 @@ PSA-5043+ based LNA board</text>
 <pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="FILTER_IN" class="0">
 <segment>
 <pinref part="MMM1362" gate="G$1" pin="RF-OUT"/>
 <wire x1="36.83" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
