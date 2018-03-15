@@ -5450,7 +5450,7 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="MMM1362" library="PSA4-5043_" deviceset="PSA4-5043+" device="">
+<part name="PSA$-5043" library="PSA4-5043_" deviceset="PSA4-5043+" device="">
 <attribute name="PACKAGE" value="MMM1362"/>
 <attribute name="PRICE" value="2.50"/>
 <attribute name="SPICEPREFIX" value="M"/>
@@ -5483,7 +5483,7 @@ Source: AVX .. aphvc.pdf</description>
 PSA-5043+ based LNA board</text>
 </plain>
 <instances>
-<instance part="MMM1362" gate="G$1" x="17.78" y="137.16">
+<instance part="PSA$-5043" gate="G$1" x="17.78" y="137.16">
 <attribute name="MP" x="17.94" y="147.32" size="1.778" layer="96"/>
 </instance>
 <instance part="X1" gate="G1" x="-70.88" y="137.42" smashed="yes">
@@ -5543,7 +5543,7 @@ PSA-5043+ based LNA board</text>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<pinref part="MMM1362" gate="G$1" pin="GND"/>
+<pinref part="PSA$-5043" gate="G$1" pin="GND"/>
 <wire x1="20.32" y1="101.6" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5559,14 +5559,14 @@ PSA-5043+ based LNA board</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="MMM1362" gate="G$1" pin="RF-IN"/>
+<pinref part="PSA$-5043" gate="G$1" pin="RF-IN"/>
 <wire x1="-17.78" y1="137.16" x2="1.27" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="FILTER_IN" class="0">
+<net name="LNA_OUT" class="0">
 <segment>
-<pinref part="MMM1362" gate="G$1" pin="RF-OUT"/>
+<pinref part="PSA$-5043" gate="G$1" pin="RF-OUT"/>
 <wire x1="36.83" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="137.16" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
@@ -5612,7 +5612,7 @@ PSA-5043+ based LNA board</text>
 <junction x="134.62" y="137.16"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="FIN" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="IN"/>
